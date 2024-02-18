@@ -1,0 +1,396 @@
+@font-face {
+  font-family: "TT Lakes";
+    font-style: normal;
+  font-weight: 400;
+  src: local("TT Lakes"),
+  url("./fonts/TTLakes-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-style: normal;
+  font-weight: 600;
+  src: local("TT Lakes"),
+  url("./fonts/TTLakes-Bold.woff") format("woff");
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "TT Lakes";
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+.page-header {
+  height: 88px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0;
+  color: #FFFFFF;
+  gap: 16px;
+}
+
+.page-header__title {
+  color: #1B1C21
+}
+
+.page-header__button_menu {
+  background-color: #FF3E79;
+  background-image: url("./svg/menu.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+}
+
+.page-header__divider, .page-header__divider1 {
+  display: flex;
+  width: 2px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: #EAEAEA;
+}
+
+.page-header__icon {
+  width: 96px;
+  height: 50;
+}
+
+.page-header__button_iphone {
+  background-color: #FF3E79;
+  background-image: url('./svg/icon\ телефон.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.page-header__button_support {
+  background-color: #FF3E79;
+  background-image: url("./svg/support.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.page-header__button_contacts {
+  background-color: #FF3E79;
+  background-image: url("./svg/contacts.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.page-header__button_application {
+  background-color: #FF3E79;
+  background-image: url("./svg/application.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.page-header__button_repair {
+  background-color: #FF3E79;
+  background-image: url("./svg/repair.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.page-header__sub {
+  color: #1B1C21
+}
+
+.pade-main {
+  background-color:#F8F8F8;
+}
+
+.pade-main__menu {
+  padding-bottom: 10px;
+}
+
+.pade-main__title  {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title::before {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 40px;
+  border-radius: 0 20px 20px 0;
+  background-color: #41F6D7;
+  margin-right: 16px;
+}
+
+.main-menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  height: 45px;
+  padding: 0;
+  margin: 15px;
+  list-style: none;
+  overflow-x: scroll;
+  overflow-y: auto;
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+  margin-left: 16px;
+}
+
+.main-menu__list::-webkit-scrollbar {
+  display: none;
+}
+
+.main-menu__link {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #7E7E82;
+}
+
+
+
+.main-menu__link_active {
+  background-color: #FFFFFF;
+  border: 2px solid #B8FFEC;
+  border-radius: 5px;
+
+}
+
+.pade-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pade-section__text {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 16px;
+}
+
+.pade-section__text_iPhone {
+  font-size: 14px;
+  margin: 0;
+}
+
+.pade-section__text_tablet {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.pade-section__button {
+  margin-top: 16px;
+  margin-left: 6px;
+  background-color: #F8F8F8;
+  background-image: url("./svg/стрелки.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.button__text {
+  padding-left: 16px;
+  font-size: 16px;
+  color: #1B1C21;
+  font-weight: 500; 
+}
+
+.pade-section__image {
+max-width: 100%;
+padding-bottom: 36px;
+} 
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+  .page-header__title {
+    display: none;
+  }
+
+  .page-header__button_iphone {
+    display: none;
+  }
+
+  .page-header__sub {
+    display: none;
+  }
+
+  .page-header__button_contacts {
+    display: none;
+  }
+
+  .page-header__button_support {
+    display: none;
+  }
+
+  .pade-section__text_tablet {
+    display: none;
+  }
+
+  .pade-section__text_computer {
+    display: none;
+  }
+
+  .page-header__divider1 {
+    display: none;
+  }
+
+  .pade-section__image {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1119px) {
+  .page-header {
+  padding-left: 24px;
+  padding-right: 24px; 
+}
+
+.page-header__title {
+  display: none;
+}
+
+.page-header__sub {
+  display: none;
+}
+
+.page-header__icon {
+  margin-right: auto;
+}
+
+.pade-main__title {
+  margin-right: 24px;
+}
+
+.main-menu__list {
+  margin-left: 24px;
+}
+
+.pade-section {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 24px;
+  padding-top: 0;
+  padding-bottom: 40px;
+  gap: 48px;
+}
+
+.pade-section__text {
+  flex-basis: 312px;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.pade-section__image {
+  max-width: 531px;
+  flex-grow: 1;
+  padding-bottom: 0;
+}
+
+.pade-section__text_computer {
+  display: none;
+}
+}
+
+@media (min-width: 1119px) {
+  body {
+    background-color: #F8F8F8;
+  }
+
+  .page-header {
+    padding-left: 0;
+  }
+
+  .page-header__title {
+    margin-right: auto;
+      display: flex;
+      align-items: center;
+      padding-top: 24px;
+      padding-bottom: 16px;
+      font-size: 28px;
+      line-height: 40px;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+  .title::before {
+    margin-right: 25px;
+  } 
+
+  .page-header__button_menu,
+  .page-header__divider1,
+  .page-header__icon,
+  .page-header__button_iphone,
+  .page-header__button_support,
+  .page-header__button_contacts,
+  .page-header__divider {
+    display: none;
+  }
+
+  .pade-main__title {
+    display: none;
+  }
+
+  .main-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 82px;
+  }
+
+  .pade-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 28px;
+    padding-top: 0;
+    padding-bottom: 49px;
+    gap: 36px;
+  }
+
+  .pade-section__text {
+    flex-basis: 592px;
+    flex-grow: 1;
+    padding: 0;
+    margin-bottom: 0;
+  }
+    
+  .pade-section__image {
+    flex-basis: 530px;
+    flex-grow: 1;
+    padding-bottom: 0;
+    max-width: 100%;
+    }
+}
