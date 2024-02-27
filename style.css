@@ -14,8 +14,6 @@
   url("./fonts/TTLakes-Bold.woff") format("woff");
 }
 
-
-
 html {
   box-sizing: border-box;
 }
@@ -23,9 +21,191 @@ html {
   box-sizing: inherit;
 }
 
+
+.article-block {
+position: fixed;
+background-color: white;
+opacity: 0.9;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  background-color: white;
+  overflow-y: scroll;
+  box-shadow: 0 0 50px 40px rgba(178, 176, 176, 0.1);
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  padding-top: 18px;
+}
+
+.sidebar__button_close {
+  background-image: url("./svg/close.svg");
+  background-color: #FF3E79;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+}
+
+.sidebar__icon {
+  background-image: url("./svg/Group.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 97px;
+  height: 51px;
+  margin-right: auto;
+}
+
+.sidebar__button_search {
+  background-image: url("./svg/search.svg");
+  background-color: #FF3E79;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+}
+
+.sidebar__ul {
+list-style: none;
+}
+
+.sidebar__link_active::before {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 32px;
+  position: absolute;
+  top: -4%;
+  left: -40px;
+  border-radius: 0 20px 20px 0;
+  background-color: #41F6D7;
+}
+
+.sidebar__link_active {
+  position: relative;
+  
+}
+
+.sidebar__link {
+  display: block;
+  text-decoration: none;
+  color: #1B1C21;
+  font-size: 16px;
+  padding-bottom: 32px; 
+}
+
+
+.sidebar__link_activ {
+text-decoration: none;
+color: #7E7E82 
+}
+
+.sidebar__footer {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding-left: 24px;
+margin-top: auto;
+}
+
+.sidebar__footer__block {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.sidebar__footer__button_iphone {
+  background-image: url("./svg/iphone.svg");
+  background-color: #FF3E79;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+}
+
+.sidebar__footer__button_support {
+  background-image: url("./svg/support.svg");
+  background-color: #FF3E79;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+}
+
+.sidebar__footer__button_contacts {
+  background-image: url("./svg/contacts.svg");
+  background-color: #FF3E79;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+}
+
+.sidebar__footer__mail {
+  display: block;
+  text-decoration: none;
+  color: #1B1C21;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.sidebar__footer__iphone {
+  display: block;
+  text-decoration: none;
+  color: #1B1C21;
+  font-size: 24px;
+  font-weight: 600;
+  
+  
+}
+
+.sidebar__footer__lang {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.sidebar__footer__button {
+  font-size: 16px;
+  background-color: #FFFFFF;
+}
+
+.sidebar__footer__button_active {
+  color: #7E7E82;
+  padding-left: 0;
+}
+
 body {
   font-family: "TT Lakes";
   margin: 0;
+  overflow-y: hidden;
 }
 
 button {
@@ -73,7 +253,7 @@ button {
 
 .page-header__button_iphone {
   background-color: #FF3E79;
-  background-image: url('./svg/icon\ телефон.svg');
+  background-image: url("./svg/iphone.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 40px;
