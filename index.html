@@ -11,9 +11,9 @@
 <article class="article-block"></article>
     <aside class="sidebar">
         <header class="sidebar__header">
-                <button class="sidebar__button_close"></button>
+                <button class="button-round sidebar__button_close"></button>
                 <div class="sidebar__icon"></div>
-                <button class="sidebar__button_search">
+                <button class="button-round sidebar__button_search">
         </header>
         <nav class="sidebar__nav">
             <ul class="sidebar__ul">
@@ -29,38 +29,47 @@
         </nav>
         <footer class="sidebar__footer">
             <div class="sidebar__footer__block">
-                <button class="sidebar__footer__button_iphone"></button>
-                <button class="sidebar__footer__button_support"></button>
-                <button class="sidebar__footer__button_contacts"></button>
+                <button class="button-round sidebar__footer__button_iphone"></button>
+                <button class="button-round sidebar__footer__button_support"></button>
+                <button class="button-round sidebar__footer__button_contacts"></button>
             </div>
             <a class="sidebar__footer__mail" href="mailto: mail@cps.com&body=здравствуйте?subject=вопрос">mail@cps.com</a>
             <a class="sidebar__footer__iphone"href="tel:+7 800 890 8900" >8 800 890 8900</a>
-            <div class="sidebar__footer__lang">
-                <button class="sidebar__footer__button sidebar__footer__button_active">RU</button>
-                <button class="sidebar__footer__button">EN</button> 
-                <button class="sidebar__footer__button">CH</button> 
-            </div>
+            <ul class="sidebar__footer__lang">
+                <li><label>
+                        <input type="radio" class="radio" name="prim" value="RU" checked>
+                        <span class="radio-span radio-span_active">RU</span>
+                    </label></li>
+                <li><label>
+                        <input type="radio" class="radio" name="prim" value="EN">
+                        <span class="radio-span">EN</span>
+                    </label></li>   
+                <li><label>
+                        <input type="radio" class="radio" name="prim" value="CH">
+                        <span class="radio-span">CH</span>
+                    </label></li>
+            </ul>      
         </footer>
     </aside>
 
   <header class="page-header">
       <h1 class="page-header__title title">Услуги и сервисы</h1>
-      <button class="page-header__button_menu"></button>
+      <button class="button-round page-header__button_menu"></button>
       <div class="page-header__divider1"></div>
       <div class="page-header__icon">
           <img src="./svg/Group.svg">
       </div>
      
-      <button class="page-header__button_iphone"></button>
-      <button class="page-header__button_support"></button>
-      <button class="page-header__button_contacts"></button>
+      <button class="button-round page-header__button_iphone"></button>
+      <button class="button-round page-header__button_support"></button>
+      <button class="button-round page-header__button_contacts"></button>
     
       <div class="page-header__divider"></div>
 
       <p class="page-header__sub">Оставить заявку</p>
-      <button type="button" class="page-header__button_application"></button>
+      <button type="button" class="button-round page-header__button_application"></button>
       <p class="page-header__sub">Статус ремонта</p>
-      <button type="button" class="page-header__button_repair"></button>
+      <button type="button" class="button-round page-header__button_repair"></button>
   </header>
 
   <main class="pade-main">
