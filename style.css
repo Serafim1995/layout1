@@ -29,6 +29,8 @@ button {
   border: none;
 }
 
+
+
 .button-round {
   background-color: #FF3E79;
   background-repeat: no-repeat;
@@ -64,7 +66,7 @@ left: 0;
   height: 100%;
   background-color: white;
   overflow-y: scroll;
-  box-shadow: 0 0 50px 40px rgba(178, 176, 176, 0.1);
+  box-shadow: 0 0 50px 40px rgba(178, 176, 176, 0.1); 
 }
 
 .sidebar::-webkit-scrollbar {
@@ -217,7 +219,7 @@ margin-top: auto;
 body {
   font-family: "TT Lakes";
   margin: 0;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 
@@ -367,7 +369,7 @@ body {
   margin-top: 16px;
   margin-left: 6px;
   background-color: #F8F8F8;
-  background-image: url("./svg/стрелки.svg");
+  background-image: url("./svg/strelka.svg");
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
@@ -381,14 +383,88 @@ body {
 
 .pade-section__image {
 max-width: 100%;
-padding-bottom: 36px;
+margin-bottom: 24px;
 } 
 
-@media screen and (min-width: 0px) and (max-width: 768px){
+
+.section-brand_title {
+  font-size: 16px;
+  color: #7E7E82;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 16px; 
+  margin-top: 0;
+  margin-bottom: 16px;
+  background-image: linear-gradient(to right,#F8F8F8,#FFFFFF)
+}
+
+
+.swiper-slide__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 240px;
+  height: 72px;
+  margin-left: 16px;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+}
+
+.Lenovo {
+  width: 108px;
+  height: 32px;
+} 
+
+.iphone,
+.hp {
+  margin-right: 80px;
+} 
+
+.section-brand_link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FF3E79;
+  border-radius: 50%;
+  background-image: url("./svg.brand/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.strelka-logo {
+  display: flex;
+  margin-left: 26px;
+  margin-bottom: 26px;
+}
+
+.strelka-logo__icon {
+  padding-left: 7px;
+background-color: #F8F8F8;
+background-image: url("./svg/strelka.svg");
+background-repeat: no-repeat;
+background-position: 0 50%;
+}
+
+.strelka-logo__text {
+  padding-left: 16px;
+  background-color: #F8F8F8;
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 767px){
   .page-header__title {
     display: none;
   }
 
+ 
   .page-header__button_iphone {
     display: none;
   }
@@ -420,9 +496,34 @@ padding-bottom: 36px;
   .pade-section__image {
     min-width: 100%;
   }
+
+  .button__logo {
+    display: none;
+  }
+
+  .swiper {
+    height: 110px;
+  }
+  
+  .swiper-slide {
+    width: 240px;
+  } 
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #a9a9a9;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+  }
+
 }
 
-@media screen and (min-width: 769px) and (max-width: 1119px) {
+@media screen and (min-width: 768px) and (max-width: 1119px) {
   .page-header {
   padding-left: 24px;
   padding-right: 24px; 
@@ -474,6 +575,36 @@ padding-bottom: 36px;
 
 .pade-section__text_computer {
   display: none;
+}
+
+.section-brand_title {
+  margin-left: 14px;
+}
+
+
+.section-brand__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.swiper-slide {
+flex-shrink: 1;
+}
+
+
+
+.swiper-slide__content {
+  margin: 0;
+}
+
+.hide {
+  height: 160px;
+  overflow-y: hidden;
 }
 }
 
@@ -544,5 +675,29 @@ padding-bottom: 36px;
     flex-grow: 1;
     padding-bottom: 0;
     max-width: 100%;
+  }
+
+  .section-brand {
+    margin-left: 32px;
+  }
+
+  .swiper-slide {
+    flex-shrink: 1;
+    width: auto;
     }
+
+  .section-brand__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 16px;
+      row-gap: 16px;
+      margin-bottom: 24px;
+  }
+
+  .hide {
+    height: 160px;
+    overflow-y: hidden;
+  }
+
+
 }
